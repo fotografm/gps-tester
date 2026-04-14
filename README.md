@@ -77,7 +77,7 @@ pynmea2
 ## Installation
 
 ```bash
-git clone git@github.com:fotografm/gps-tester.git
+git clone https://github.com/fotografm/gps-tester.git
 cd gps-tester
 ```
 
