@@ -27,7 +27,7 @@ import sys
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-DEVICE_DEFAULT = '/dev/ttyUSB0'
+DEVICE_DEFAULT = '/dev/ttyACM0'
 BAUD_DEFAULT   = 9600
 TITLE          = 'GPS Signal Bars — VK-162 / G72 M8130-KT'
 UPDATE_MS      = 800   # canvas redraw interval

@@ -19,7 +19,7 @@ Both the VK-162 G-Mouse and G72 M8130-KT use identical firmware and present the 
 
 | Parameter | Value |
 |-----------|-------|
-| Device    | `/dev/ttyUSB0` |
+| Device    | `/dev/ttyACM0` |
 | Baud rate | 9600 |
 | Chipset   | u-blox M8030 |
 | Constellations | GPS · GLONASS · Galileo · BeiDou |
@@ -76,6 +76,12 @@ pynmea2
 
 ## Installation
 
+**System packages** — install these first (required on Debian/Ubuntu/Mint):
+
+```bash
+sudo apt install python3-pip python3-venv python3-tk
+```
+
 ```bash
 git clone https://github.com/fotografm/gps-tester.git
 cd gps-tester
@@ -105,7 +111,7 @@ Activate the venv first:
 source venv/bin/activate
 ```
 
-**VK-162 / G72 (plug into USB, device appears as `/dev/ttyUSB0`):**
+**VK-162 / G72 (plug into USB, device appears as `/dev/ttyACM0`):**
 
 ```bash
 python gps_bars_m8030.py
@@ -120,7 +126,7 @@ python gps_bars_tbeam.py
 **Override device or baud rate if needed:**
 
 ```bash
-python gps_bars_m8030.py --device /dev/ttyUSB1 --baud 9600
+python gps_bars_m8030.py --device /dev/ttyACM1 --baud 9600
 python gps_bars_tbeam.py --device /dev/ttyACM1 --baud 115200
 ```
 
