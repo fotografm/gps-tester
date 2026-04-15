@@ -82,6 +82,8 @@ pynmea2
 sudo apt install python3-pip python3-venv python3-tk
 ```
 
+> Note: do not use `python3.12-venv` or any version-specific name — `python3-venv` works on all Debian and Ubuntu releases regardless of the Python version installed.
+
 ```bash
 git clone https://github.com/fotografm/gps-tester.git
 cd gps-tester
